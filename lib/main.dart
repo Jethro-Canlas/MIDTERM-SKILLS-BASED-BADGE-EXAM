@@ -14,7 +14,7 @@ class DailyHelperToolkitApp extends StatefulWidget {
 }
 
 class _DailyHelperToolkitAppState extends State<DailyHelperToolkitApp> {
-  String _displayName = 'Learner';
+  String _displayName = 'User';
   MaterialColor _themeColor = Colors.indigo;
   int _currentIndex = 0;
 
@@ -24,14 +24,14 @@ class _DailyHelperToolkitAppState extends State<DailyHelperToolkitApp> {
     ExpenseSplitterModule(),
   ];
 
-  void _openPersonalizationSheet() {
+  void _openPersonalizationSheet(BuildContext dialogContext) {
     final TextEditingController nameController = TextEditingController(
       text: _displayName,
     );
     MaterialColor selectedColor = _themeColor;
 
     showDialog<void>(
-      context: context,
+      context: dialogContext,
       builder: (context) {
         return AlertDialog(
           title: const Text('Personalize App'),
@@ -95,18 +95,18 @@ class _DailyHelperToolkitAppState extends State<DailyHelperToolkitApp> {
           ),
           actions: [
             TextButton(
-              onPressed: () => Navigator.pop(context),
+              onPressed: () => Navigator.pop(dialogContext),
               child: const Text('Cancel'),
             ),
             FilledButton(
               onPressed: () {
                 final String newName = nameController.text.trim();
                 setState(() {
-                  _displayName = newName.isEmpty ? 'Learner' : newName;
+                  _displayName = newName.isEmpty ? 'User' : newName;
                   _themeColor = selectedColor;
                 });
-                Navigator.pop(context);
-                ScaffoldMessenger.of(this.context).showSnackBar(
+                Navigator.pop(dialogContext);
+                ScaffoldMessenger.of(dialogContext).showSnackBar(
                   SnackBar(
                     content: Text('Saved! Hi, $_displayName'),
                   ),
@@ -139,7 +139,7 @@ class _DailyHelperToolkitAppState extends State<DailyHelperToolkitApp> {
               actions: [
                 IconButton(
                   tooltip: 'Personalize',
-                  onPressed: _openPersonalizationSheet,
+                  onPressed: () => _openPersonalizationSheet(context),
                   icon: const Icon(Icons.tune),
                 ),
               ],
