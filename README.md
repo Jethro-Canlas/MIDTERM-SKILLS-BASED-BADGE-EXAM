@@ -11,23 +11,32 @@
 - Expense Splitter
 
 # Features
-- 3 modules extending ToolModule
-- Polymorphic collection: List<ToolModule> modules = [...]
-- Dynamic module rendering using selected index and `buildBody(context)`
-- Bottom navigation generated from module icon/title
-- Personalization: display name + 3 preset theme colors
-- Greeting in app bar: `Hi, ___`
-- Encapsulation with private state variables (`_var`) and controlled methods (`compute`, `reset`, etc.)
-- Input validation for empty/non-numeric values and divide-by-zero (`pax = 0` case)
-- Widget usage requirements covered across app:
-  - Scaffold, AppBar
-  - Text, Icon, Container/Card
-  - TextField + TextEditingController
-  - ElevatedButton / FilledButton
-  - ListView (session log)
-  - SnackBar (errors/feedback)
-  - BottomNavigationBar (multi-page layout)
-  - Slider (tip percentage)
+
+#BMI Checker
+- Enter height (cm) and weight (kg)
+- Calculates BMI and categorizes result (Underweight, Normal, Overweight, Obese)
+- Displays computed BMI value with category
+- Reset button to clear inputs and results
+
+#Study Timer + Session Log
+- Set study duration in minutes
+- Countdown timer displays remaining time
+- Logs completed sessions with timestamp
+- View session history in ListView
+- Start, Stop, and Reset controls
+
+# Expense Splitter
+- Enter total bill amount and number of people
+- Adjust tip percentage with slider
+- Calculates per-person share including tip
+- Shows bill breakdown: original bill, tip amount, pax count
+- Reset button to clear and start over
+
+# App Personalization
+- Tap "Personalize" button in app bar
+- Change display name (shown in greeting: "Hi, ___")
+- Choose theme color from 3 presets (Blue, Green, Purple)
+- Theme applies to entire app UI
 
 # How to Run
 1. Make sure Flutter SDK is installed and available in PATH.
