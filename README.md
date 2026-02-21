@@ -1,4 +1,9 @@
-# Daily Helper Toolkit
+# Members
+- Jethro Aloysius Canlas - Project Lead / Integrator
+- John Patrick Gonzales - Layout Specialist
+- Christian James Naguit - Material UI Specialsit
+- Bien Gabrielle Pangilinan - QA + Documentation Specialist
+- Royce Vincent Simbillo - Text & Styling Specialist
 
 # Chosen 3 Modules
 - BMI Checker
