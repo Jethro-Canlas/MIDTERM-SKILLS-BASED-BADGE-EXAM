@@ -1,21 +1,21 @@
 # Daily Helper Toolkit
 
-## Chosen 3 Modules
+# Chosen 3 Modules
 - BMI Checker
 - Study Timer + Session Log
 - Expense Splitter
 
-## Features Checklist (Implemented)
-- [x] Abstract contract: `ToolModule` with `title`, `icon`, and `buildBody(BuildContext context)`
-- [x] 3 concrete modules extending/implementing `ToolModule`
-- [x] Polymorphic collection: `List<ToolModule> modules = [...]`
-- [x] Dynamic module rendering using selected index and `buildBody(context)`
-- [x] Bottom navigation generated from module icon/title
-- [x] Personalization: display name + 3 preset theme colors
-- [x] Greeting in app bar: `Hi, ___`
-- [x] Encapsulation with private state variables (`_var`) and controlled methods (`compute`, `reset`, etc.)
-- [x] Input validation for empty/non-numeric values and divide-by-zero (`pax = 0` case)
-- [x] Widget usage requirements covered across app:
+# Features Checklist (Implemented)
+- Abstract contract: `ToolModule` with `title`, `icon`, and `buildBody(BuildContext context)`
+- 3 concrete modules extending/implementing `ToolModule`
+- Polymorphic collection: `List<ToolModule> modules = [...]`
+- Dynamic module rendering using selected index and `buildBody(context)`
+- Bottom navigation generated from module icon/title
+- Personalization: display name + 3 preset theme colors
+- Greeting in app bar: `Hi, ___`
+- Encapsulation with private state variables (`_var`) and controlled methods (`compute`, `reset`, etc.)
+- Input validation for empty/non-numeric values and divide-by-zero (`pax = 0` case)
+- Widget usage requirements covered across app:
   - Scaffold, AppBar
   - Text, Icon, Container/Card
   - TextField + TextEditingController
@@ -25,7 +25,7 @@
   - BottomNavigationBar (multi-page layout)
   - Slider (tip percentage)
 
-## How to Run
+# How to Run
 1. Make sure Flutter SDK is installed and available in PATH.
 2. Open the project folder:
 	- `C:\Users\Jethro\Desktop\MIDTERM_BADGING`
