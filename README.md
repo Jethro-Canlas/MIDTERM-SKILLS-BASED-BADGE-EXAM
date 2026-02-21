@@ -10,10 +10,9 @@
 - Study Timer + Session Log
 - Expense Splitter
 
-# Features Checklist (Implemented)
-- Abstract contract: `ToolModule` with `title`, `icon`, and `buildBody(BuildContext context)`
-- 3 concrete modules extending/implementing `ToolModule`
-- Polymorphic collection: `List<ToolModule> modules = [...]`
+# Features
+- 3 modules extending ToolModule
+- Polymorphic collection: List<ToolModule> modules = [...]
 - Dynamic module rendering using selected index and `buildBody(context)`
 - Bottom navigation generated from module icon/title
 - Personalization: display name + 3 preset theme colors
@@ -33,8 +32,8 @@
 # How to Run
 1. Make sure Flutter SDK is installed and available in PATH.
 2. Open the project folder:
-	- `C:\Users\Jethro\Desktop\MIDTERM_BADGING`
+	- C:\Users\Jethro\Desktop\MIDTERM_BADGING
 3. Install dependencies:
-	- `flutter pub get`
+	- flutter pub get
 4. Run the app:
-	- `flutter run`
+	- flutter run
